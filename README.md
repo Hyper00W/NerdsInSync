@@ -4,66 +4,88 @@
 
 ---
 
-## The Idea
+## The Problem
 
 Most productivity apps measure time.
 
 Most coding platforms measure submissions.
 
-But neither answers a simple question:
+Neither answers the question that actually matters:
 
-**Who actually showed up and put in the work today?**
+**Who genuinely showed up and put in the work today?**
 
-GrindSync is an experiment to solve that.
+GrindSync is an attempt to solve that.
 
-Built as a backend-first project, it aims to transform individual learning journeys into a shared experience where progress is visible, consistency matters, and effort can be tracked beyond simple problem counts.
+Not by counting hours.
+Not by counting solved problems.
+
+But by building a system that makes consistent effort visible.
+
+---
+
+## What is GrindSync?
+
+GrindSync is a backend-first platform designed to help two people stay accountable while learning.
+
+Whether it's:
+
+* DSA
+* Backend Development
+* System Design
+* Machine Learning
+* Interview Preparation
+
+the goal is simple:
+
+Track progress, compare consistency, and create a shared environment where effort matters.
 
 ---
 
 ## Current Progress
 
-### Backend Foundation
+### Backend Foundation ✅
 
-* FastAPI server setup
-* PostgreSQL database integration
-* SQLAlchemy configuration
-* Environment-based configuration management
+* FastAPI setup
+* PostgreSQL integration
+* SQLAlchemy ORM configuration
+* Environment variable management
 * Database connectivity established
-* First ORM model implemented
+
+### User System 🚧
+
+* User model created
+* Users table generated
+* Request validation using Pydantic
+* Registration endpoint implemented
+* User data persistence to PostgreSQL
 
 ### Development Status
 
 ```text
-Phase 1  ███████░░░ 70%
-Phase 2  ░░░░░░░░░░ 0%
-Phase 3  ░░░░░░░░░░ 0%
+Foundation         ██████████ 100%
+Authentication     ███░░░░░░░ 30%
+Core Features      ░░░░░░░░░░ 0%
+Real-Time Layer    ░░░░░░░░░░ 0%
+Automation Layer   ░░░░░░░░░░ 0%
 ```
 
 ---
 
 ## Tech Stack
 
+### Backend
+
 * Python
 * FastAPI
 * PostgreSQL
 * SQLAlchemy
+* Pydantic
+
+### Tools
+
+* Git
+* GitHub
 * dotenv
-
----
-
-## Why This Project?
-
-As someone preparing for technical interviews and spending countless hours solving problems, I noticed something:
-
-Streaks can be faked.
-
-Problem counts can be misleading.
-
-Hours logged don't always reflect effort.
-
-There should be a better way to measure consistency, progress, and genuine work.
-
-This project is my attempt to explore that idea.
 
 ---
 
@@ -73,7 +95,10 @@ This project is my attempt to explore that idea.
 Client
    │
    ▼
-FastAPI Backend
+FastAPI
+   │
+   ▼
+API Layer
    │
    ▼
 SQLAlchemy ORM
@@ -82,45 +107,94 @@ SQLAlchemy ORM
 PostgreSQL
 ```
 
-Simple for now.
+Simple by design.
 
-Not for long.
-
----
-
-## What's Next?
-
-The foundation is in place.
-
-The next phase introduces features that move beyond traditional progress tracking and begin exploring something more interesting:
-
-* Real-time interactions
-* Collaborative progress systems
-* Activity insights
-* Competitive learning mechanics
-
-And a few ideas I'm intentionally keeping off the README for now 👀
+The goal right now is building a strong foundation before introducing more advanced systems.
 
 ---
 
-## Learning Goals
+## Why This Project?
 
-This project is helping me gain hands-on experience with:
+As a Computer Science student preparing for placements, I spend a significant amount of time solving problems, learning new technologies, and trying to stay consistent.
+
+One thing I noticed:
+
+* Streaks can be manipulated.
+* Problem counts can be misleading.
+* Logged hours don't always represent actual effort.
+
+This project started as a question:
+
+**Can accountability be designed better?**
+
+GrindSync is my attempt to explore that idea while learning backend development from the ground up.
+
+---
+
+## Roadmap
+
+### Phase 1 — Foundation
+
+* [x] FastAPI Setup
+* [x] PostgreSQL Setup
+* [x] SQLAlchemy Configuration
+* [x] User Model
+* [x] Registration Endpoint
+
+### Phase 2 — Authentication
+
+* [ ] Password Hashing
+* [ ] Login Endpoint
+* [ ] JWT Authentication
+* [ ] Protected Routes
+
+### Phase 3 — Social Layer
+
+* [ ] Friend Requests
+* [ ] Friend Management
+* [ ] User Connections
+
+### Phase 4 — Accountability System
+
+* [ ] Study Sessions
+* [ ] Session Tracking
+* [ ] Activity Metrics
+* [ ] Leaderboards
+
+### Phase 5 — Real-Time Experience
+
+* [ ] WebSockets
+* [ ] Live Activity Updates
+* [ ] Online Presence
+
+### Phase 6 — The Interesting Part 👀
+
+A few ideas are intentionally missing from this README.
+
+The long-term vision involves reducing manual tracking and exploring more objective ways to measure consistency and effort.
+
+---
+
+## What I'm Learning
+
+This project is helping me gain practical experience with:
 
 * Backend Architecture
-* Database Design
-* ORM Concepts
 * REST APIs
-* Authentication Systems
-* Real-Time Communication
-* Scalable Application Design
+* Database Design
+* SQLAlchemy ORM
+* Authentication & Security
+* Real-Time Systems
+* Scalable Project Structure
 
 ---
 
 ## Project Status
 
-Currently under active development.
+Actively under development.
 
-Building in public, learning in public, improving one commit at a time.
+Built step by step while learning backend engineering in public.
 
-⭐ If you find the concept interesting, consider following the repository to see where it goes.
+Every feature in this repository is being implemented from scratch as part of the learning journey.
+
+⭐ Follow the project if you'd like to see where it goes.
