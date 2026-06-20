@@ -37,7 +37,7 @@ Whether it's:
 
 the goal is simple:
 
-Track progress, compare consistency, and create an environment where effort matters.
+Track progress, compare consistency, and create a shared environment where effort matters.
 
 ---
 
@@ -50,78 +50,23 @@ Track progress, compare consistency, and create an environment where effort matt
 * SQLAlchemy ORM configuration
 * Environment variable management
 * Database connectivity established
-* Database dependency injection using FastAPI
 
-### User Management ✅
+### User System 🚧
 
 * User model created
 * Users table generated
 * Request validation using Pydantic
-* User registration endpoint implemented
+* Registration endpoint implemented
 * User data persistence to PostgreSQL
-
-### Authentication System 🚧
-
-* Password hashing with bcrypt
-* Password verification
-* Login endpoint implemented
-* User lookup using SQLAlchemy queries
-* Authentication flow completed
 
 ### Development Status
 
 ```text
 Foundation         ██████████ 100%
-Authentication     ████████░░ 80%
+Authentication     ███░░░░░░░ 30%
 Core Features      ░░░░░░░░░░ 0%
 Real-Time Layer    ░░░░░░░░░░ 0%
 Automation Layer   ░░░░░░░░░░ 0%
-```
-
----
-
-## Current Architecture
-
-```text
-Client
-   │
-   ▼
-FastAPI Routes
-   │
-   ▼
-Pydantic Schemas
-   │
-   ▼
-SQLAlchemy ORM
-   │
-   ▼
-PostgreSQL
-```
-
-### Authentication Flow
-
-```text
-Register
-   │
-   ▼
-Validate Request
-   │
-   ▼
-Hash Password
-   │
-   ▼
-Store User
-
-Login
-   │
-   ▼
-Find User By Email
-   │
-   ▼
-Verify Password
-   │
-   ▼
-Success / Failure
 ```
 
 ---
@@ -135,13 +80,36 @@ Success / Failure
 * PostgreSQL
 * SQLAlchemy
 * Pydantic
-* Passlib (bcrypt)
 
 ### Tools
 
 * Git
 * GitHub
 * dotenv
+
+---
+
+## Current Architecture
+
+```text
+Client
+   │
+   ▼
+FastAPI
+   │
+   ▼
+API Layer
+   │
+   ▼
+SQLAlchemy ORM
+   │
+   ▼
+PostgreSQL
+```
+
+Simple by design.
+
+The goal right now is building a strong foundation before introducing more advanced systems.
 
 ---
 
@@ -171,14 +139,12 @@ GrindSync is my attempt to explore that idea while learning backend development 
 * [x] PostgreSQL Setup
 * [x] SQLAlchemy Configuration
 * [x] User Model
-* [x] User Schema
 * [x] Registration Endpoint
 
 ### Phase 2 — Authentication
 
-* [x] Password Hashing
-* [x] Password Verification
-* [x] Login Endpoint
+* [ ] Password Hashing
+* [ ] Login Endpoint
 * [ ] JWT Authentication
 * [ ] Protected Routes
 
@@ -193,7 +159,6 @@ GrindSync is my attempt to explore that idea while learning backend development 
 * [ ] Study Sessions
 * [ ] Session Tracking
 * [ ] Activity Metrics
-* [ ] Daily Score System
 * [ ] Leaderboards
 
 ### Phase 5 — Real-Time Experience
@@ -219,8 +184,7 @@ This project is helping me gain practical experience with:
 * Database Design
 * SQLAlchemy ORM
 * Authentication & Security
-* API Design
-* Dependency Injection
+* Real-Time Systems
 * Scalable Project Structure
 
 ---
@@ -231,16 +195,6 @@ Actively under development.
 
 Built step by step while learning backend engineering in public.
 
-Every feature in this repository is being implemented from scratch to understand not only how it works, but why it works.
-
-### Current Milestone
-
-✅ User Registration
-
-✅ Password Hashing
-
-✅ Login Authentication
-
-🔜 JWT Authentication
+Every feature in this repository is being implemented from scratch as part of the learning journey.
 
 ⭐ Follow the project if you'd like to see where it goes.
